@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Recipe {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public int recipeId;
 
     @ColumnInfo(name="name")
